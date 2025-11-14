@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Christian James Correa">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="default.css">
+    <meta charset="UTF-8" />
+    <meta name="author" content="Christian James Correa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="default.css" />
     <title>Christian James Correa</title>
 </head>
 
 <body>
+
+    <!-- Navigation -->
     <nav>
-        <a class="logo" href="index.html">
-            <!-- <img src="images/logo.png" alt="Logo" class="logo"> -->
-            Christian James Correa
-        </a>
+        <a class="logo" href="#home">Christian James Correa</a>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <header>
-        <div class="header">
-            <h1>Hello, I'm Christian James Correa</h1>
-            <p>Aspiring Software Developer</p>
-            <p>Currently learning React and JavaScript</p>
-            <div class="btn">
-                <a href="about.html" class="btn-item"> Learn more about me</a>
-                <a href="projects.html" class="btn-item"> View my projects</a>
-            </div>
+    <!-- Hero / Home -->
+    <header id="home" class="hero">
+        <h1>Hello, I'm Christian James Correa</h1>
+        <p>Aspiring Software Developer</p>
+        <p>Currently learning React and JavaScript</p>
+
+        <div class="btn-group">
+            <a href="#about" class="btn">Learn more about me</a>
+            <a href="#projects" class="btn">View my projects</a>
+            <a id="toggle-theme" class="btn">Toggle Theme</a>
         </div>
     </header>
 
-    <!-- <div class="body-content">
+    <!-- About Section -->
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I am a passionate software developer with experience in building web applications. I enjoy learning new technologies and improving my skills.</p>
-    </div> -->
-
-    <div class="contact">
-        <h2>Contact Me</h2>
-        <p>Email:
-            <a href="mailto:christianjamescorrea@gmail.com">christianjamescorrea@gmail.com</a>
+        <p>
+            I'm learning front-end development and building small projects while improving 
+            my skills in HTML, CSS, JavaScript, and React. I enjoy creating clean, simple 
+            interfaces and learning new technologies to grow as a developer.
         </p>
-    </div>
-    
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Starter Project</h3>
+                <p>
+                    A simple layout or page you built while learning HTML/CSS.  
+                    You can replace this when you have more work to showcase.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>In Progress</h3>
+                <p>
+                    Currently experimenting with JavaScript and React basics — components, 
+                    props, and small interactive UI pieces.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>Email: 
+            <a href="mailto:christianjamescorrea@gmail.com">
+                christianjamescorrea@gmail.com
+            </a>
+        </p>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Christian James Correa</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
